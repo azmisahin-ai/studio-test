@@ -1,5 +1,5 @@
 # Introduction
-It is a template to be used in the automation systems of a web service or project developed using Flask and Python.
+Machine learning and artificial learning project with GPU support.
 
 🔖 Version: 0.0.1
 

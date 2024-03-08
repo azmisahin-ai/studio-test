@@ -38,22 +38,22 @@
 
 ```
 
-# Web Service Template
+# Web Service studio
 
-This project is a template for building automation systems in web projects. It utilizes Flask, a popular Python web framework, to provide a simple web service structure.
+Machine learning and artificial learning project with GPU support.
 
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/azmisahin/azmisahin-software-web-service-template-flask-python-v1.git
+   git clone https://github.com/azmisahin-ai/studio.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd azmisahin-software-web-service-template-flask-python-v1
+   cd studio
    ```
 
 3. Create a virtual environment (optional but recommended):
@@ -87,5 +87,5 @@ This project is a template for building automation systems in web projects. It u
 Run the web service using the provided console script:
 
 ```bash
-web-service-template run
+web-service-studio run
 ```
