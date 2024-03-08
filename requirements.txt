@@ -1,6 +1,1 @@
 # packages that depend on the base environment.
-gunicorn
-flask
-flask-restx
-gevent
-flask-socketio

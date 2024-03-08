@@ -38,18 +38,12 @@ services:
         - SWICH_TRACKING_VERBOSE=$SWICH_TRACKING_VERBOSE
         - SWICH_TRACKING_REPORT=$SWICH_TRACKING_REPORT
 
-    environment:
-      # FLASK
-      - FLASK_DEBUG=$SWICH_TRACKING_DEBUG
-      - FLASK_APP=src.web.app
-      - FLASK_RUN_HOST=$HOST_IP
-      - FLASK_RUN_PORT=$TCP_PORT
-
     volumes:
       # cached : Especially during development, mounting files into the Docker container can be faster thanks to this option.
       - ../..:/workspaces/template
       # our application environment and data
       - data:/data
+      - /.hub:/.hub
 
     # must be launched in production environments
     command: sleep infinity

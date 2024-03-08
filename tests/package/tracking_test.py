@@ -1,4 +1,3 @@
-# tests/package/tracking_test.py
 import os
 import unittest
 from src.package.tracking import Tracking

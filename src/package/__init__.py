@@ -1,8 +1,4 @@
-# src/package/__init__.py
-"""
-package package
-
-"""
+# __init__.py
 
 from .tracking import Tracking
 

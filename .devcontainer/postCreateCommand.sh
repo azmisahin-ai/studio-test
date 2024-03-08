@@ -26,48 +26,4 @@ echo SWICH_TRACKING_VERBOSE=$SWICH_TRACKING_VERBOSE
 echo SWICH_TRACKING_REPORT=$SWICH_TRACKING_REPORT
 echo PYTHONPATH=$PYTHONPATH
 
-echo ==========
-
-. $DATA_FOLDER/.venv/bin/activate
-if [ $? -ne 0 ]; then
-  echo "✖️ Failed to activate virtual environment."
-  exit 1
-else
-  echo "✅ Virtual environment activated."
-fi
-
-black .
-if [ $? -ne 0 ]; then
-  echo "✖️ Automatically formatting Python code failed."
-  exit 1
-else
-  echo "✅ Automatically formatting Python code succeeded."
-fi
-
-flake8
-if [ $? -ne 0 ]; then
-  echo "✖️ Linting errors found. Please fix them before committing."
-  exit 1
-else
-  echo "✅ Linting passed."
-fi
-
-sphinx-apidoc -o /workspaces/template/dist/docs  /workspaces/template/src
-if [ $? -ne 0 ]; then
-  echo "✖️ Documentation generation code failed."
-  exit 1
-else
-  echo "✅ Automatically the Documentation code was successful."
-fi
-
-behave
-if [ $? -ne 0 ]; then
-  echo "✖️ Behavior-driven development failed."
-  exit 1
-else
-  echo "✅ Behavior-driven development was successful."
-fi
-
-
-echo ==========
-# /bin/sh
+/bin/sh

@@ -1,4 +1,3 @@
-# src/package/tracking.py
 import logging
 import os
 

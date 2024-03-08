@@ -1,0 +1,17 @@
+NumPy
+pytest
+Flask
+flask-cors
+Pillow
+json-rpc
+requests
+transformers
+torch
+Pillow
+accelerate
+git+https://github.com/kashif/diffusers.git@wuerstchen-v3
+peft
+invisible_watermark
+safetensors
+opencv-python
+opencv-python-headless

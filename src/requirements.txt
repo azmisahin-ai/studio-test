@@ -1,12 +1,3 @@
-# packages that depend on the development environment.
+# packages that depend on the base environment.
 setuptools
 build
-flake8
-black
-Sphinx
-behave
-gunicorn
-flask
-flask-restx
-gevent
-flask-socketio

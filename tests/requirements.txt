@@ -1,10 +1,5 @@
-# packages that depend on the test environment.
+# packages that depend on the base environment.
 flake8
 black
 Sphinx
 behave
-gunicorn
-flask
-flask-restx
-gevent
-flask-socketio

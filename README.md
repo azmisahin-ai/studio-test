@@ -1,7 +1,7 @@
 # Introduction
-Machine learning and artificial learning project with GPU support.
+This repository provides a standardized template for Docker projects, compatible with agile processes.
 
-🔖 Version: 0.0.1
+🔖 Version: 0.2.1
 
 ## Getting Started
 Documentation
@@ -15,7 +15,7 @@ To contribute to this project, you will need the following:
  ✅ [Docker](https://www.docker.com/) installed and configured
 
  ✅ [Visual Studio Code](https://code.visualstudio.com/) installed
-
+ 
  ✅ Familiarity with the Dockerfile format and [Development Container](https://containers.dev/)
 
 ## Contribution

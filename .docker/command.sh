@@ -24,24 +24,6 @@ echo SWICH_TRACKING_VERBOSE=$SWICH_TRACKING_VERBOSE
 echo SWICH_TRACKING_REPORT=$SWICH_TRACKING_REPORT
 echo PYTHONPATH=$PYTHONPATH
 
-echo ==========
-
-. $DATA_FOLDER/.venv/bin/activate
-if [ $? -ne 0 ]; then
-  echo "✖️ Failed to activate virtual environment."
-  exit 1
-else
-  echo "✅ Virtual environment activated."
-fi
-
-$DATA_FOLDER/.venv/bin/gunicorn --bind $HOST_IP:$TCP_PORT "src.web.app:app"
-if [ $? -ne 0 ]; then
-  echo "✖️ App failed."
-  exit 1
-else
-  echo "✅ App was successful."
-fi
-
-echo ==========
+sleep infinity
 
 /bin/sh

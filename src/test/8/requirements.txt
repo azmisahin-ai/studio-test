@@ -1,0 +1,10 @@
+torch
+transformers
+safetensors
+accelerate
+diffusers
+scipy
+invisible_watermark
+xformers
+Flask
+gtts

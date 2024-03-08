@@ -34,20 +34,20 @@ else
   echo "✅ Virtual environment activated."
 fi
 
-black .
-if [ $? -ne 0 ]; then
-  echo "✖️ Automatically formatting Python code failed."
-  exit 1
-else
-  echo "✅ Automatically formatting Python code succeeded."
-fi
-
 flake8
 if [ $? -ne 0 ]; then
   echo "✖️ Linting errors found. Please fix them before committing."
   exit 1
 else
   echo "✅ Linting passed."
+fi
+
+black .
+if [ $? -ne 0 ]; then
+  echo "✖️ Automatically formatting Python code failed."
+  exit 1
+else
+  echo "✅ Automatically formatting Python code succeeded."
 fi
 
 sphinx-apidoc -o /workspaces/template/dist/docs  /workspaces/template/src
@@ -66,12 +66,12 @@ else
   echo "✅ Behavior-driven development was successful."
 fi
 
-$DATA_FOLDER/.venv/bin/gunicorn --bind $HOST_IP:$TCP_PORT "src.web.app:app"
+/data/.venv/bin/python -X development /workspaces/template/example/package/tracker.py
 if [ $? -ne 0 ]; then
-  echo "✖️ Package failed."
+  echo "✖️ Example package tracker failed."
   exit 1
 else
-  echo "✅ Package was successful."
+  echo "✅ Example package tracker was successful."
 fi
 
 echo ==========

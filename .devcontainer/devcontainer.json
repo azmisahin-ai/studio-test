@@ -10,7 +10,7 @@
  * @copyright Copyright (c) 2024
  */
 {
-  "name": "web service studio",
+  "name": "template",
   // Update the 'dockerComposeFile' list if you have more compose files or use different names.
   // The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
   "dockerComposeFile": [
@@ -24,7 +24,7 @@
   // for development
   "workspaceFolder": "/workspaces/template",
   // after the container has been created
-  "postCreateCommand": "chmod +x .devcontainer/postCreateCommand.sh && .devcontainer/postCreateCommand.sh",
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh",
   //
   "customizations": {
     "vscode": {
@@ -47,11 +47,7 @@
           "*_test.py"
         ],
         "python.testing.pytestEnabled": false,
-        "python.testing.unittestEnabled": true,
-        "cucumberautocomplete.steps": [
-          "features/steps/*.py"
-        ],
-        "cucumberautocomplete.strictGherkinCompletion": true
+        "python.testing.unittestEnabled": true
       },
       "extensions": [
         "hediet.vscode-drawio",
@@ -64,10 +60,8 @@
         "ms-python.vscode-pylance",
         "ms-python.black-formatter",
         "charliermarsh.ruff",
-        "ms-python.flake8",
-        "CucumberOpen.cucumber-official"
+        "ms-python.flake8"
       ]
     }
-  },
-  "remoteUser": "root"
+  }
 }
